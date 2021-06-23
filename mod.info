@@ -1,0 +1,7 @@
+name=diseases
+poster=poster.png
+description=test
+id=pz-diseases
+url=https://github.com/ZioPao/expanded-diseases-zomboid
+modversion=0.1.0
+pzversion=41.50-IWBUMS
