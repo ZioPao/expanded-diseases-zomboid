@@ -1,0 +1,15 @@
+module ExpandedDiseases{
+    imports {
+        Base
+    }
+    recipe Inject
+    	{
+    		destroy InsulinPens,
+    		Result:InsulinPens,
+    		Time:30.0,
+    	   	Category:Device,
+    		NeedToBeLearn:false,
+    		CanBeDoneFromFloor:false,
+    		OnCreate:recipe_InjectInsulin,
+    	}
+}
