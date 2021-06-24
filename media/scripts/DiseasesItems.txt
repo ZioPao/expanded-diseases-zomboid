@@ -1,0 +1,14 @@
+
+module ExpandedDiseases{
+    imports {
+        Base
+    }
+
+    item InsulinPen
+    {
+        Type         = Normal,
+        DisplayName  = Insulin Pen,
+        Icon         = InsulinPen,
+        Weight       = 0.1,
+    }
+}
