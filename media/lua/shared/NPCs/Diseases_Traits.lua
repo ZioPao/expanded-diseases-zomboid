@@ -1,1 +1,1 @@
-TraitFactory.addTrait("DiabetesT1", "Type 1 Diabetes", -8, "This character has type 1 diabetes and requires insulin.", false);
+TraitFactory.addTrait("DiabetesT1", "Diabetic", -8, "This character has type 1 diabetes and requires insulin.", false);
