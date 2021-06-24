@@ -25,5 +25,4 @@ function addEventCallsIfHasTrait()
 
 end
 
-
 Events.OnGameStart.Add(addEventCallsIfHasTrait)

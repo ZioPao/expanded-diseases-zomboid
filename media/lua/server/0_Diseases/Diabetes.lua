@@ -26,5 +26,3 @@ function diabetesTick(player)
     player:Say("Insulin is: " .. player:getModData().Diabetes.Insulin)
 end
 
-
-Events.OnLoad.Add(addEventCallsIfHasTrait)
