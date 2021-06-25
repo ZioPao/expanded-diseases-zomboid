@@ -16,6 +16,13 @@ function addEventCallsIfHasTrait()
 			        Insulin = ExpandedDiseases.Settings.Diabetes.StartingInsulin,
 			        BloodSugar = ExpandedDiseases.Settings.Diabetes.StartingBloodSugar,
 			    }
+
+			    -- TESTING
+			    -- Add 3 pens and 3 vials to inventory
+                for i=0, 3 do
+                    player:getInventory():AddItem("ExpandedDiseases.InsulinPen")
+                    player:getInventory():AddItem("ExpandedDiseases.InsulinVial")
+			    end
 			end
 
 		end

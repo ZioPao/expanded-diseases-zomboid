@@ -2,14 +2,25 @@ module ExpandedDiseases{
     imports {
         Base
     }
-	item InsulinPens
-	{
-		Count	=	5,
-        Type	=	Normal,
-		Weight	=	0.005,
-		DisplayName	=	Insulin Pens,
-		Icon	=	InsulinPen,
-	}
+
+    item InsulinVial
+    {
+        Weight      = 0.01,
+        Type        = Drainable,
+        UseDelta    = 0.01,
+        DisplayName = Vial of Insulin,
+        Icon        = InsulinPen,
+    }
+
+    item InsulinPen
+    {
+        Weight	            = 0.1,
+        Type	            = Drainable,
+        UseWhileEquipped	= FALSE,
+        UseDelta            = 0.33,
+        KeepOnDeplete       = true,
+        DisplayName	        = Insulin Pen,
+        Icon	            = InsulinPen,
+    }
 
 }
-

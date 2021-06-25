@@ -2,14 +2,43 @@ module ExpandedDiseases{
     imports {
         Base
     }
-    recipe Inject
-    	{
-    		destroy InsulinPens,
-    		Result:InsulinPens,
-    		Time:30.0,
-    	   	Category:Device,
-    		NeedToBeLearn:false,
-    		CanBeDoneFromFloor:false,
-    		OnCreate:recipe_InjectInsulin,
-    	}
+
+    recipe Inject Insulin {
+        destroy InsulinPen=1,
+
+        Result:InsulinPen,
+        Time:10.0,
+        OnTest:Recipe.OnTest.InsulinPenNotEmpty,
+        OnCreate:Recipe.OnCreate.InjectInsulin
+    }
+
+    recipe Add 1 mL of Insulin {
+        destroy InsulinPen=1,
+        InsulinVial,
+
+        Result:InsulinPen,
+        Time:5.0,
+        OnTest:Recipe.OnTest.RefillInsulinPen,
+        OnCreate:Recipe.OnCreate.Refill1ml
+    }
+
+    recipe Add 2 mL of Insulin {
+        destroy InsulinPen=1,
+        InsulinVial,
+
+        Result:InsulinPen,
+        Time:5.0,
+        OnTest:Recipe.OnTest.RefillInsulinPen,
+        OnCreate:Recipe.OnCreate.Refill2ml
+    }
+
+    recipe Add 3 mL of  Insulin {
+        destroy InsulinPen=1,
+        InsulinVial,
+
+        Result:InsulinPen,
+        Time:5.0,
+        OnTest:Recipe.OnTest.RefillInsulinPen,
+        OnCreate:Recipe.OnCreate.Refill3ml
+    }
 }
