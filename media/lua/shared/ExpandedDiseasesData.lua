@@ -13,7 +13,7 @@ ExpandedDiseases = {
             -- Time that it takes for carbs to fully process
             CarbSecondsToProcess = 2500,
             -- The amount of glucose 1 carb generates
-            CarbToGlucoseRatio = 45,
+            CarbToGlucoseRatio = 4.5,
         }
 	},
     Client = {
