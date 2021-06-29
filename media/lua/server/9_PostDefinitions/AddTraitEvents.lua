@@ -13,6 +13,7 @@ function addEventCallsIfHasTrait()
 			    -- Default values
 			    player:getModData().Diabetes = {
 			        CarbRate = carbRate,
+			        UnprocessedCarbs = 0.0,
 			        Insulin = ExpandedDiseases.Settings.Diabetes.StartingInsulin,
 			        BloodSugar = ExpandedDiseases.Settings.Diabetes.StartingBloodSugar,
 			    }

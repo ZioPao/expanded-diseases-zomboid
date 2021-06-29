@@ -9,7 +9,11 @@ ExpandedDiseases = {
             InsulinCounteractRate = 36,
             -- Placeholder, we assume that all Insulin is rapid acting in this scenario
             --  Meaning it lasts between 3 and 4 hours
-            InsulinSecondsForFullEffect = 3*60*60
+            InsulinSecondsForFullEffect = 4650,
+            -- Time that it takes for carbs to fully process
+            CarbSecondsToProcess = 2500,
+            -- The amount of glucose 1 carb generates
+            CarbToGlucoseRatio = 45,
         }
 	},
     Client = {
