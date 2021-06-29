@@ -12,7 +12,7 @@ module ExpandedDiseases{
         OnCreate:Recipe.OnCreate.InjectInsulin
     }
 
-    recipe Add 1 mL of Insulin {
+    recipe Add .1 mL of Insulin {
         destroy InsulinPen=1,
         InsulinVial,
 
@@ -22,7 +22,7 @@ module ExpandedDiseases{
         OnCreate:Recipe.OnCreate.Refill1ml
     }
 
-    recipe Add 2 mL of Insulin {
+    recipe Add .2 mL of Insulin {
         destroy InsulinPen=1,
         InsulinVial,
 
@@ -32,7 +32,7 @@ module ExpandedDiseases{
         OnCreate:Recipe.OnCreate.Refill2ml
     }
 
-    recipe Add 3 mL of  Insulin {
+    recipe Add .3 mL of  Insulin {
         destroy InsulinPen=1,
         InsulinVial,
 
